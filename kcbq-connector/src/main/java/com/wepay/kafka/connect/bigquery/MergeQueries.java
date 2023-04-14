@@ -152,10 +152,10 @@ public class MergeQueries {
     // After, regardless of whether we flushed or not, clean up old batches from the intermediate
     // table. Some rows may be several batches old but still in the table if they were in the
     // streaming buffer during the last purge.
-    logger.trace("Clearing batches from {} on back from {}", batchNumber, intTable(intermediateTable));
-    String batchClearQuery = batchClearQuery(intermediateTable, batchNumber);
-    logger.trace(batchClearQuery);
-    bigQuery.query(QueryJobConfiguration.of(batchClearQuery));
+//    logger.trace("Clearing batches from {} on back from {}", batchNumber, intTable(intermediateTable));
+//    String batchClearQuery = batchClearQuery(intermediateTable, batchNumber);
+//    logger.trace(batchClearQuery);
+//    bigQuery.query(QueryJobConfiguration.of(batchClearQuery));
   }
 
   @VisibleForTesting
