@@ -273,6 +273,7 @@ public class MergeBatches {
           batchNumber, intTable(intermediateTable)
       ));
     }
+    logger.debug("Merging {} rows in batch {} from {}", currentBatch.total(), batchNumber, intTable(intermediateTable));
     return true;
   }
 
