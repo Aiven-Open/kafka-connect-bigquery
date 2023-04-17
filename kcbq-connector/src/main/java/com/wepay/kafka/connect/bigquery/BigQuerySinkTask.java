@@ -522,12 +522,12 @@ public class BigQuerySinkTask extends SinkTask {
     try {
       maybeStopExecutor(loadExecutor, "load executor");
       maybeStopExecutor(executor, "table write executor");
-      if (upsertDelete) {
-        mergeBatches.intermediateTables().forEach(table -> {
-          logger.debug("Deleting {}", intTable(table));
-          getBigQuery().delete(table);
-        });
-      }
+//      if (upsertDelete) {
+//        mergeBatches.intermediateTables().forEach(table -> {
+//          logger.debug("Deleting {}", intTable(table));
+//          getBigQuery().delete(table);
+//        });
+//      }
     } finally {
       stopped = true;
     }
