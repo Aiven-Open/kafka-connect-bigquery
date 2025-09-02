@@ -1,4 +1,4 @@
-# REPOSITORY IS DEPRECATED. PLEASE USE https://github.com/confluentinc/kafka-connect-bigquery.
+# REPOSITORY IS DEPRECATED. PLEASE USE [https://github.com/confluentinc/kafka-connect-bigquery](https://github.com/Aiven-Open/bigquery-connector-for-apache-kafka).
 
 # Kafka Connect BigQuery Connector
 
